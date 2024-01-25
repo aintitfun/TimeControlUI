@@ -1,0 +1,15 @@
+.time-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .day-label {
+    width: 100px;
+    margin-right: 10px;
+  }
+  
+  .time-input {
+    width: 70px;
+    margin-right: 10px;
+  }

@@ -1,0 +1,13 @@
+<h1>Time Window</h1>
+<div>
+    <label for="callerDropdown">Select Caller:</label>
+    <select id="callerDropdown" [(ngModel)]="selectedCaller">
+      <option *ngFor="let caller of callers" [value]="caller">{{ caller }}</option>
+    </select>
+  </div>
+  &nbsp;
+  <div *ngFor="let entry of callTimeEntries" class="time-entry">
+    <label for="{{ entry.day }}" class="day-label">{{ entry.day }}:</label>
+    <input type="text" id="{{ entry.day }}Start" [(ngModel)]="entry.startTime" class="time-input">
+    <input type="text" id="{{ entry.day }}End" [(ngModel)]="entry.endTime" class="time-input">
+  </div>

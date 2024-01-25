@@ -1,0 +1,12 @@
+<h1>User Time</h1>
+<div>
+    <label for="userDropdown">Select User:</label>
+    <select id="userDropdown" [(ngModel)]="selectedUser">
+      <option *ngFor="let user of users" [value]="user">{{ user }}</option>
+    </select>
+ </div>
+  &nbsp;
+ <div *ngFor="let entry of timeEntries" class="time-entry">
+    <label for="{{ entry.day }}" class="day-label">{{ entry.day }}:</label>
+    <input type="text" id="{{ entry.day }}" [(ngModel)]="entry.time" class="time-input">
+</div>

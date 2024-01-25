@@ -1,0 +1,14 @@
+.app-container {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Adjust the width of the menu as needed */
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #333;
+    padding-top: 20px;
+  }
+  
+  .content {
+    padding: 20px;
+  }

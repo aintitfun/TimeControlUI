@@ -1,0 +1,14 @@
+.time-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .day-label {
+    width: 100px; /* Adjust the width based on your preference */
+    margin-right: 10px;
+  }
+  
+  .time-input {
+    width: 150px; /* Adjust the width based on your preference */
+  }

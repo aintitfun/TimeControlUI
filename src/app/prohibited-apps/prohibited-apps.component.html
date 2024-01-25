@@ -1,0 +1,40 @@
+<h1>Prohibited Apps</h1>
+
+<div>
+    <label for="userCombo">Select User:</label>
+    <select id="userCombo" [(ngModel)]="selectedUser">
+      <option *ngFor="let user of users" [value]="user">{{ user }}</option>
+    </select>
+</div>
+&nbsp;
+<div>
+  <label for="appCombo">Select Application:</label>
+  <select id="appCombo" [(ngModel)]="selectedApp">
+    <option *ngFor="let app of applications" [value]="app">{{ app }}</option>
+  </select>
+</div>
+&nbsp;
+<div *ngFor="let entry of timeEntries" class="time-entry">
+  <label for="{{ entry.day }}" class="day-label">{{ entry.day }}:</label>
+  <input type="text" id="{{ entry.day }}" [(ngModel)]="entry.time" class="time-input">
+</div>
+  
+
+  
+  <div *ngFor="let entry of prohibitedAppsEntries" class="prohibited-app-entry">
+    <label for="{{ entry.app }}">{{ entry.app }}:</label>
+    <input type="text" id="{{ entry.app }}" [(ngModel)]="entry.time">
+  </div>
+  
+  <div>
+    <button (click)="deleteProhibitedApps()">Delete</button>
+    <button (click)="updateProhibitedApps()">Update</button>
+  </div>
+    
+  <div>
+    <label for="appToAdd">Application to Add:</label>
+    <input type="text" id="appToAdd" [(ngModel)]="appToAdd">
+  
+    <button (click)="addProhibitedApp()">Add</button>
+  </div>
+  
