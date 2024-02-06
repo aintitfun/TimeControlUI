@@ -19,4 +19,8 @@ export class UserTimeComponent {
       this.timeEntries.push({ day: day, time: '' });
     });
   }
+
+  update() {
+    
+  }
 }

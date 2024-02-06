@@ -19,4 +19,8 @@ export class TimeWindowComponent {
       this.callTimeEntries.push({ day: day, startTime: '', endTime: '' });
     });
   }
+
+  update(){
+    
+  }
 }

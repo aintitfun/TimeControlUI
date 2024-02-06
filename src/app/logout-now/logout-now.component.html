@@ -1,1 +1,11 @@
-<p>logout-now works!</p>
+<h1>Logout now</h1>
+<div>
+    <label for="userDropdown">Select User:</label>
+    <select id="userDropdown" [(ngModel)]="selectedUser">
+      <option *ngFor="let user of users" [value]="user">{{ user }}</option>
+    </select>
+ </div>
+ &nbsp;
+ <div>
+    <button (click)="logout()">Logout Now</button>
+  </div>

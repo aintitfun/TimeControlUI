@@ -10,3 +10,6 @@
     <label for="{{ entry.day }}" class="day-label">{{ entry.day }}:</label>
     <input type="text" id="{{ entry.day }}" [(ngModel)]="entry.time" class="time-input">
 </div>
+<div>
+  <button (click)="update()">Update</button>
+</div>

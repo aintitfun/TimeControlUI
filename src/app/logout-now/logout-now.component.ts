@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./logout-now.component.css']
 })
 export class LogoutNowComponent {
+  selectedUser: string|any;
 
+  users = ['User 1', 'User 2', 'User 3']; // Add your user data here
+
+  logout() {
+    
+  }
 }

@@ -11,3 +11,6 @@
     <input type="text" id="{{ entry.day }}Start" [(ngModel)]="entry.startTime" class="time-input">
     <input type="text" id="{{ entry.day }}End" [(ngModel)]="entry.endTime" class="time-input">
   </div>
+  <div>
+    <button (click)="update()">Update</button>
+  </div>
